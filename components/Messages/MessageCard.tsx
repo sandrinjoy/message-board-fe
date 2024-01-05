@@ -10,6 +10,7 @@ function MessageCard({ message }: { message: IMessageResponse }) {
     year: "numeric",
     minute: "2-digit",
     hour: "2-digit",
+    timeZoneName: "short",
   });
 
   return (
