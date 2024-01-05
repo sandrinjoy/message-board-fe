@@ -18,21 +18,6 @@ async function MessageStats({}: Props) {
         <span className="text-sm font-medium">{messages.length}</span>
       </div>
       <div className="flex flex-col items-center justify-center gap-1">
-        <span className="text-xs text-gray-400">Latest Message At: </span>
-        <span className="text-sm font-medium">
-          {new Date(messages[messages.length - 1].timestamp).toLocaleString(
-            "default",
-            {
-              month: "short",
-              day: "2-digit",
-              year: "numeric",
-              minute: "2-digit",
-              hour: "2-digit",
-            },
-          )}
-        </span>
-      </div>
-      <div className="flex flex-col items-center justify-center gap-1">
         <span className="text-xs text-gray-400">Delete all messages </span>
         <span className="text-sm font-medium">
           <DeleteAllButton ids={ids} />
