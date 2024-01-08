@@ -17,6 +17,7 @@ async function getMessages(
     headers: {
       Authorization: HARMONEY_DEV_AUTH_TOKEN,
     },
+    cache: "no-store",
   });
   const data = await res.json();
   if (sortBy === "asc") {
